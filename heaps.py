@@ -72,15 +72,29 @@ class MiniHeap:
             return left
         else:
             return right
+    
+    def heapsort():
+        print("sin sortear: ")
+        heap.show()
+        
+        sortlist = []
 
+        while self.size > 0:
+            sortlist.append(self.delete_a_root())
+        
+        self.heap = sortlist
 
-heap = MiniHeap()
+        print("sorteado: ")
+        for i in sortlist: 
+            print(i)
+def main():
+    heap = MiniHeap()
 
-heap.insert(5)
-heap.insert(6)
-heap.insert(7)
-heap.insert(321)
-heap.insert(-1)
-heap.insert(3)
+    heap.insert(5)
+    heap.insert(6)
+    heap.insert(7)
+    heap.insert(321)
+    heap.insert(-1)
+    heap.insert(3)
 
-heap.show()
+main()
