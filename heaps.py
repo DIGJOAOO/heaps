@@ -69,7 +69,7 @@ class MiniHeap:
             return left
 
         if self.heap[left] < self.heap[right]:
-            return left
+             return left
         else:
             return right
     
@@ -87,14 +87,6 @@ class MiniHeap:
         print("sorteado: ")
         for i in sortlist: 
             print(i)
-def main():
-    heap = MiniHeap()
 
-    heap.insert(5)
-    heap.insert(6)
-    heap.insert(7)
-    heap.insert(321)
-    heap.insert(-1)
-    heap.insert(3)
+heap = MiniHeap()
 
-main()
